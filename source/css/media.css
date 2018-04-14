@@ -1,0 +1,13 @@
+/*large screens only*/
+@media (min-width: 992px) {
+    #navbarNavAltMarkup {
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+
+
+/*Medium screens only*/
