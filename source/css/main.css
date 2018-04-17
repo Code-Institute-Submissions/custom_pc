@@ -9,7 +9,7 @@ nav {
     background-image: url("../img/minimal.jpg");
     /*background-blend-mode: overlay;*/
     background-size: cover;
-    height: 95vh;
+    height: 95vh;        /* how do i factor in the navbar?*/
     padding: 1em;
     color: white;
     display: flex;
@@ -39,18 +39,28 @@ nav {
     width: 60vw;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sections*/
-section {
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 10px;
-    background-color: pink;
+/*  ------ MAIN-CONTENT ------ */
+.main-content {
+    background-color: #F5DD90;
+    padding: 0;
+    margin:  0;
 }
 
+/*MAIN-CONTENT > SUMMARY*/
+.summary,
+.sections-item {
+    padding: 0 1rem 1rem 1rem;
+}
 
-
+.summary .outer-container {}
 .summary img {
     display: none;
+}
+
+/*MAIN-CONTENT > CONTENT*/
+.inner-container {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ footer*/
