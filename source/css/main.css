@@ -40,6 +40,15 @@ nav {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sections*/
+section {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 10px;
+    background-color: pink;
+}
+
+
+
 .summary img {
     display: none;
 }
