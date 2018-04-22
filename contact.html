@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--local css-->
     <link rel="stylesheet" href="source/css/basics.css" type="text/css" />
     <link rel="stylesheet" href="source/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="source/css/contact.css" type="text/css" />
     <link rel="stylesheet" href="source/css/media.css" type="text/css" />
+    <!--bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <title>Custom PC</title>
 </head>
 
@@ -39,23 +44,91 @@
     </header>
 
     <section>
-        section one
+
+        <!--Section: Contact v.1-->
+        <section class="container-fluid">
+
+            <div class="row">
+
+                <!--Grid column-->
+                <!--<div class="col-lg-5 mb-4">-->
+
+                <!--Form with header-->
+                <div class="card card-contact">
+
+                    <div class="card-body">
+                        <!--Header-->
+                        <div class="form-header blue accent-1">
+                            <h3>
+                                <i class="far fa-envelope"></i> Write to me</h3>
+                        </div>
+                        <!--<h2 class="font-weight-bold text-center h1">Contact Me</h2>-->
+                        <!--Section description-->
+                        <!--<p class="mb-5 pb-4">-->
+                        <p>
+                            Please use the form below to contact me if you have any queries in regards to your possible build or anything else.
+                        </p>
+                        <br>
+                        <!--Body-->
+                        <form action="mailto:skullphish@gmail.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">
+
+                            <div class="md-form">
+                                <i class="fas fa-user-circle prefix grey-text"></i><label for="form-name"> Name <strong><span style="color: red;">*</span></strong></label>
+                                <input type="text" id="form-name" class="form-control" placeholder="John Smith" required>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-at prefix grey-text"></i><label for="form-email"> Email <strong><span style="color: red;">*</span></strong></label>
+                                <input type="email" id="form-email" class="form-control" placeholder="john.smith@company.com" required>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-mobile prefix grey-text"></i><label for="form-tell"> Phone </label>
+                                <input type="tel" id="form-tell" class="form-control" placeholder="07800 666 666">
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-tags prefix grey-text"></i><label for="form-Subject"> Subject</label>
+                                <input type="text" id="form-Subject" class="form-control" placeholder="collaboration offer">
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-envelope-open prefix grey-text"></i><label for="form-text"> Message <strong><span style="color: red;">*</span></strong></label>
+                                <textarea type="text" id="form-text" class="form-control md-textarea" rows="3" required></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="reset" class="btn btn-reset"><span>reset</span></button>
+                                <!--<button class="btn btn-light-blue">Submit</button>-->
+                                <button class="btn btn-submit"><span>submit</span></button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!--Form with header-->
+
+                <!--</div>-->
+                <!--Grid column-->
+
+            </div>
+
+        </section>
+        <!--Section: Contact v.1-->
+
     </section>
 
-    <section>
-        section Two
-    </section>
 
     <footer>
         <div class="footer-container">
             <div class="footer-social">
                 <h5 class="text-center">Keep in touch</h5>
                 <ul class="list-inline social-links">
-                    <li><a href="https://twitter.com/13damianism" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://uk.linkedin.com/in/damian-rodbari" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/damianism" target="_blank"><i class="fa fa-github-square"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCM9_4SriRFp17bh2jZujgZQ/featured?view_as=subscriber" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/skullphish/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/13damianism" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://uk.linkedin.com/in/damian-rodbari" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/damianism" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCM9_4SriRFp17bh2jZujgZQ/featured?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/skullphish/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="footer-copyright text-center">
@@ -65,8 +138,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
 </body>
 
 </html>

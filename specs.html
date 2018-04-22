@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--bootstrap-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- Hover -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.0/css/hover-min.css" type="text/css" />
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
     <!--local css-->
     <link rel="stylesheet" href="source/css/basics.css" type="text/css" />
     <link rel="stylesheet" href="source/css/main.css" type="text/css" />
-    <link rel="stylesheet" href="source/css/media.css" type="text/css" />
     <link rel="stylesheet" href="source/css/specs.css" type="text/css" />
+    <link rel="stylesheet" href="source/css/media.css" type="text/css" />
     <!--bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -22,6 +24,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
             <a class="navbar-brand" href="index.html">
@@ -44,7 +47,6 @@
     </header>
 
     <section>
-        
         <!--Grid Column-->
         <div class="container-specs">
 
@@ -53,6 +55,8 @@
                 <h2>Graphics card</h2>
                 <img src="source/img/gpu.png" alt="EVGA GeForce GTX 1080 SC2 " />
                 <div class="specs-inner-container">
+
+                    <!--Tabs-->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="gpu-overview-tab" data-toggle="tab" href="#gpu-overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
@@ -61,21 +65,32 @@
                             <a class="nav-link" id="gpu-more-tab" data-toggle="tab" href="#gpu-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+
+                    <!--Tabs contents-->
+                    <div class="tab-content">
                         <div class="tab-pane fade show active" id="gpu-overview" role="tabpanel" aria-labelledby="gpu-overview-tab">
-                            <h6>
-                                EVGA GeForce GTX 1080 SC2 GAMING iCX 8GB GDDR5X VR Ready Graphics Card, 2560 Core, 1708MHz GPU, 1847MHz Boost
-                            </h6>
-                            <p>
-                                This is EVGAs Superclock 2 1080 GPU, filled to the brim with NVIDIA GTX and EVGA technology that helps with cooling, graphic power and performance, protection and resistance and even style. Boasting EVGA’s new iCX cooling system this 1080 GPU comes ready
-                                equipped to dominate in and out of games, including VR gaming. With RGB LED indications on thermal activity intelligent fan behavior and 9 additional temperature sensors to monitor various aspects of your GPU you can push
-                                your gaming to the next level free of worry.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    EVGA GeForce GTX 1080 SC2 GAMING iCX 8GB GDDR5X VR Ready Graphics Card, 2560 Core, 1708MHz GPU, 1847MHz Boost
+                                </h6>
+                                <p>
+                                    This is EVGAs Superclock 2 1080 GPU, filled to the brim with NVIDIA GTX and EVGA technology that helps with cooling, graphic power and performance, protection and resistance and even style. Boasting EVGA’s new iCX cooling system this 1080 GPU comes ready
+                                    equipped to dominate in and out of games, 2560 Core.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.evga.com/products/specs/gpu.aspx?pn=00933c14-2f72-4a87-afe1-8ed2116bdced" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.mmorpg.com/hardware-reviews/hardware-review-evga-geforce-gtx-1080-sc2-icx-is-the-real-deal-1000011654" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/evga-geforce-gtx-1080-sc2-gaming-icx-8gb-gddr5x-vr-ready-graphics-card-2560-core-1708mhz-gpu-1847mhz?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="gpu-more" role="tabpanel" aria-labelledby="gpu-more-tab">
-                            <p>For full specifications click <a href="https://www.evga.com/products/specs/gpu.aspx?pn=00933c14-2f72-4a87-afe1-8ed2116bdced" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="https://www.mmorpg.com/hardware-reviews/hardware-review-evga-geforce-gtx-1080-sc2-icx-is-the-real-deal-1000011654" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/evga-geforce-gtx-1080-sc2-gaming-icx-8gb-gddr5x-vr-ready-graphics-card-2560-core-1708mhz-gpu-1847mhz?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="gpu-more" role="tabpanel" aria-labelledby="gpu-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WZuze3OZqL4" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -87,6 +102,8 @@
                 <h2>Processor</h2>
                 <img src="source/img/cpu.png" alt="AMD Ryzen 5 1600, S AM4" />
                 <div class="specs-inner-container">
+
+                    <!--Tabs-->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="cpu-overview-tab" data-toggle="tab" href="#cpu-overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
@@ -95,30 +112,44 @@
                             <a class="nav-link" id="cpu-more-tab" data-toggle="tab" href="#cpu-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="cpu-overview" role="tabpanel" aria-labelledby="cpu-overview-tab">
-                            <h6>
-                                AMD Ryzen™ 5 1600, S AM4, Six Core, 12 Thread, 3.2GHz, 3.6GHz Turbo, 16MB Cache, 65W + Wraith Spire Cooler
-                            </h6>
-                            <p>
-                                Ryzen series CPUs from AMD uses true machine intelligence to push the performance of your PC system beyond expectations. Allow Ryzen to power your experience and be prepared to dominate tasks both in-game and out. Driven into existence by the user’s passion
-                                AMD have forged a processor with the performance power to dominate your favourite applications, games and more.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    AMD Ryzen™ 5 1600, S AM4, Six Core, 12 Thread, 3.2GHz, 3.6GHz Turbo, 16MB Cache, 65W + Wraith Spire Cooler
+                                </h6>
+                                <p>
+                                    Ryzen series CPUs from AMD uses true machine intelligence to push the performance of your PC system beyond expectations. Driven into existence by the user’s passion AMD have forged a processor with the performance power to dominate your favourite games,
+                                    games and more.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.amd.com/en/products/cpu/amd-ryzen-5-1600" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="http://www.guru3d.com/articles-pages/amd-ryzen-5-1600-review,1.html" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/amd-ryzen-5-1600-s-am4-six-core-12-thread-34ghz-36ghz-turbo-16mb-cache-65w-cpu-retail?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="cpu-more" role="tabpanel" aria-labelledby="cpu-more-tab">
-                            <p>For full specifications click <a href="https://www.amd.com/en/products/cpu/amd-ryzen-5-1600" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="http://www.guru3d.com/articles-pages/amd-ryzen-5-1600-review,1.html" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/amd-ryzen-5-1600-s-am4-six-core-12-thread-34ghz-36ghz-turbo-16mb-cache-65w-cpu-retail?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="cpu-more" role="tabpanel" aria-labelledby="cpu-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mbK0n5FjvhI" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
             <!--Processor-->
 
             <!--monitor-->
             <div class="specs-outer-container">
                 <h2>Monitor</h2>
                 <img src="source/img/monitor.png" alt="25 inch AOC Q2577PWQ IPS Monitor" />
+
+                <!--Tabs-->
                 <div class="specs-inner-container">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -128,21 +159,31 @@
                             <a class="nav-link" id="monitor-more-tab" data-toggle="tab" href="#monitor-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="monitor-overview" role="tabpanel" aria-labelledby="monitor-overview-tab">
-                            <h6>
-                                25" AOC Q2577PWQ IPS Monitor, QHD 2560x1440, 5ms, 350 cd/m2, DP/HDMI/DVI/VGA, Speakers
-                            </h6>
-                            <p>
-                                This monitor with QHD resolution ensures that users can enjoy a full view of a document, spreadsheet, or website at a single glance without the need of scrolling. IPS technology is one of the highest performing panel technologies currently available for
-                                displays. This way, AOC makes sure users will greatly benefit from high accuracy in colour, contrast and wide viewing angles. In order to give users a variety of options for connecting different input sources, the AOC Q2577PWQ
-                                comes with DisplayPort, HDMI, DVI and VGA. Also comes with AOC's Flicker Free technology that ensures a zero-flickering viewing experience.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    25" AOC Q2577PWQ IPS Monitor, QHD 2560x1440, 5ms, 350 cd/m2, DP/HDMI/DVI/VGA, Speakers
+                                </h6>
+                                <p>
+                                    This IPS monitor with QHD resolution ensures that users can enjoy a full view of a document, spreadsheet, or website at a single glance without the need of scrolling. Also comes with DisplayPort, HDMI, DVI and VGA ports.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="http://eu.aoc.com/en/products/q2577pwq?redirected=true" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="http://www.expertreviews.co.uk/accessories/pc-monitors/1403416/aoc-q2577pwq-review" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/25-aoc-q2577pwq-ips-monitor-qhd-2560x1440-flicker-free-technology-5ms-350-cd-m2-dp-hdmi-dvi-vga-spea?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="monitor-more" role="tabpanel" aria-labelledby="monitor-more-tab">
-                            <p>For full specifications click <a href="http://eu.aoc.com/en/products/q2577pwq?redirected=true" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="http://www.expertreviews.co.uk/accessories/pc-monitors/1403416/aoc-q2577pwq-review" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/25-aoc-q2577pwq-ips-monitor-qhd-2560x1440-flicker-free-technology-5ms-350-cd-m2-dp-hdmi-dvi-vga-spea?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="monitor-more" role="tabpanel" aria-labelledby="monitor-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yGbEyaeqXXo" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -153,6 +194,8 @@
             <div class="specs-outer-container">
                 <h2>Case</h2>
                 <img src="source/img/case.png" alt="NZXT H440 New Edition Black/Re" />
+
+                <!--Tabs-->
                 <div class="specs-inner-container">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -162,30 +205,44 @@
                             <a class="nav-link" id="case-more-tab" data-toggle="tab" href="#case-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="case-overview" role="tabpanel" aria-labelledby="case-overview-tab">
-                            <h6>
-                                NZXT H440 New Edition Black/Red Mid Tower Windowed Case
-                            </h6>
-                            <p>
-                                The H440 takes the modern design of the H series and breaks away from tradition to bring you the cleanest PC ever. With its groundbreaking interior, the H440 guarantees a streamlined PC-building experience and provides comprehensive high-performance features
-                                in a sleek, minimalist package.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    NZXT H440 New Edition Black/Red Mid Tower Windowed Case
+                                </h6>
+                                <p>
+                                    The H440 takes the modern design of the H series and breaks away from tradition to bring you the cleanest PC ever. With its groundbreaking interior, the H440 guarantees a streamlined PC-building experience and provides comprehensive high-performance features
+                                    in a sleek, minimalist package.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.nzxt.com/products/h440-black-red" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.techspot.com/products/cases/nzxt-h440.98666/" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/nzxt-h440-new-edition-black-red-mid-tower-windowed-case-usb-30-4x-120-140mm-fans-included?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="case-more" role="tabpanel" aria-labelledby="case-more-tab">
-                            <p>For full specifications click <a href="https://www.nzxt.com/products/h440-black-red" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="https://www.techspot.com/products/cases/nzxt-h440.98666/" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/nzxt-h440-new-edition-black-red-mid-tower-windowed-case-usb-30-4x-120-140mm-fans-included?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="case-more" role="tabpanel" aria-labelledby="case-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZhLADIM7euU" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
             <!--case-->
 
             <!--ram-->
             <div class="specs-outer-container">
                 <h2>Ram</h2>
                 <img src="source/img/ram.png" alt="Corsair DDR4 Vengeance LPX Red" />
+
+                <!--Tabs-->
                 <div class="specs-inner-container">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -195,22 +252,32 @@
                             <a class="nav-link" id="ram-more-tab" data-toggle="tab" href="#ram-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="ram-overview" role="tabpanel" aria-labelledby="ram-overview-tab">
-                            <h6>
-                                16GB (2x8GB) Corsair DDR4 Vengeance LPX Red, PC4-25600 (3200), Non-ECC Unbuffered, CAS 16-18-18-36, 1.35V
-                            </h6>
-                            <p>
-                                This particular batch of DDR4 memory comes as two 8GB sticks allowing you to access a high density whilst only requiring two DIMM slots - this allows the set to fit into a wider array of motherboards. An ideal buy for your gaming rig set-up that comes
-                                at a reasonable price. Purchasing this 16GB allows your computer to have that extra breathing room for multi-tasking whilst gaming, or for extra storage for your media devices. Breaking the 3k barrier this memory pushes
-                                DDR4 into its top-end bracket. Along with general performance perks a higher MHz speed can also improve your FPS when gaming. Speeds such as this are targeted toward those who like to get every last drop of frequency performance
-                                out of their memory.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    16GB (2x8GB) Corsair DDR4 Vengeance LPX Red, PC4-25600 (3200), Non-ECC Unbuffered, CAS 16-18-18-36, 1.35V
+                                </h6>
+                                <p>
+                                    This particular batch of DDR4 memory comes as two 8GB sticks allowing you to access a high density whilst only requiring two DIMM slots - this allows the set to fit into a wider array of motherboards. An ideal buy for your gaming rig set-up that comes
+                                    at a reasonable price. Purchasing this 16GB allows your computer to have that extra breathing room for multi-tasking whilst gaming.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-16GB-%282x8GB%29-DDR4-DRAM-3200MHz-C16-Memory-Kit---Red/p/CMK16GX4M2B3200C16R" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.tomshardware.com/reviews/corsair-vengeance-lpx-16gb-ddr4-4600-memory,5344.html" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/16gb-(2x8gb)-corsair-ddr4-vengeance-lpx-red-pc4-25600-(3200)-non-ecc-unbuffered-cas-16-18-18-36-xmp-?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="ram-more" role="tabpanel" aria-labelledby="ram-more-tab">
-                            <p>For full specifications click <a href="https://www.corsair.com/uk/en/Categories/Products/Memory/VENGEANCE%C2%AE-LPX-16GB-%282x8GB%29-DDR4-DRAM-3200MHz-C16-Memory-Kit---Red/p/CMK16GX4M2B3200C16R" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="https://www.tomshardware.com/reviews/corsair-vengeance-lpx-16gb-ddr4-4600-memory,5344.html" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/16gb-(2x8gb)-corsair-ddr4-vengeance-lpx-red-pc4-25600-(3200)-non-ecc-unbuffered-cas-16-18-18-36-xmp-?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="ram-more" role="tabpanel" aria-labelledby="ram-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dPwrzSX8Xjw" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -221,6 +288,8 @@
             <div class="specs-outer-container">
                 <h2>Mainboard</h2>
                 <img src="source/img/mainboard.png" alt="MSI B350 GAMING PRO CARBON" />
+
+                <!--Tabs-->
                 <div class="specs-inner-container">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -230,30 +299,44 @@
                             <a class="nav-link" id="mainboard-more-tab" data-toggle="tab" href="#mainboard-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="mainboard-overview" role="tabpanel" aria-labelledby="mainboard-overview-tab">
-                            <h6>
-                                MSI B350 GAMING PRO CARBON, AMD B350, S AM4, DDR4, SATA3, M.2, 2-Way CrossFire, ATX
-                            </h6>
-                            <p>
-                                Carbon fiber instantly sends visions of speed, performance, and exotic technology to many. Wrapped in carbon fiber look trim, B350 Gaming Pro Carbon aims to instaill many of those same visions. Built on MSI’s Military Class 5 foundation, the B350 Gaming
-                                Pro Carbon supports AMD's newest Ryzen processors and DDR4 memory up to 3200Mhz via four memory slots. There’s Turbo M.2 connectivity with transfer speeds up to 32 Gb/s.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    MSI B350 GAMING PRO CARBON, AMD B350, S AM4, DDR4, SATA3, M.2, 2-Way CrossFire, ATX
+                                </h6>
+                                <p>
+                                    Carbon fiber instantly sends visions of speed, performance, and exotic technology to many. Wrapped in carbon fiber look trim, B350 Gaming Pro Carbon aims to instaill many of those same visions. Built on MSI’s Military Class 5 foundation, the B350 Gaming
+                                    Pro Carbon supports AMD's newest Ryzen processors and DDR4 memory up to 3200Mhz via four memory slots. There’s Turbo M.2 connectivity with transfer speeds up to 32 Gb/s.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.msi.com/Motherboard/B350-GAMING-PRO-CARBON.html" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.tweaktown.com/reviews/8548/msi-b350m-gaming-pro-amd-b350-motherboard-review/index.html" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/msi-b350-gaming-pro-carbon-amd-b350-s-am4-ddr4-sata3-m2-pcie-sata-2-way-crossfire-gbe-usb-31-gen2-ap?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="mainboard-more" role="tabpanel" aria-labelledby="mainboard-more-tab">
-                            <p>For full specifications click <a href="https://www.msi.com/Motherboard/B350-GAMING-PRO-CARBON.html" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="https://www.tweaktown.com/reviews/8548/msi-b350m-gaming-pro-amd-b350-motherboard-review/index.html" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/msi-b350-gaming-pro-carbon-amd-b350-s-am4-ddr4-sata3-m2-pcie-sata-2-way-crossfire-gbe-usb-31-gen2-ap?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="mainboard-more" role="tabpanel" aria-labelledby="mainboard-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QwTHg0eJ4fw" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
             <!--mainboard-->
 
             <!--psu-->
             <div class="specs-outer-container">
                 <h2>PSU</h2>
                 <img src="source/img/psu.png" alt="650W EVGA SuperNOVA 650 G2" />
+
+                <!--Tabs-->
                 <div class="specs-inner-container">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -263,21 +346,31 @@
                             <a class="nav-link" id="psu-more-tab" data-toggle="tab" href="#psu-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="psu-overview" role="tabpanel" aria-labelledby="psu-overview-tab">
-                            <h6>
-                                650W EVGA SuperNOVA 650 G2, Full Modular, 80 PLUS Gold, SLI/CrossFire, 140mm Fan
-                            </h6>
-                            <p>
-                                The unbeatable performance of the EVGA SuperNOVA G2 power supply line is now available in 650 watts. Based on the award winning G2 power supplies, this unit features 80 Plus Gold rated efficiency, and clean, continuous power to every component. The ECO
-                                Control Fan system offers fan modes to provide absolutely zero fan noise during low load to medium load operations. Backed by an award winning 7 year warranty, and 100% Japanese capacitor design, the EVGA SuperNOVA 650
-                                G2 power supply offers unbeatable performance at an unbeatable value.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    650W EVGA SuperNOVA 650 G2, Full Modular, 80 PLUS Gold, SLI/CrossFire, 140mm Fan
+                                </h6>
+                                <p>
+                                    The unbeatable performance of the EVGA SuperNOVA G2 power supply line is now available in 650 watts. Based on the award winning G2 power supplies, this unit features 80 Plus Gold rated efficiency, and clean, continuous power to every component. The ECO
+                                    Control Fan system offers fan modes to provide absolutely zero fan noise during low load to medium load operations. Backed by an award winning 7 year warranty.
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.evga.com/products/product.aspx?pn=220-g2-0650-y1" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.techpowerup.com/reviews/EVGA/SuperNOVA_G2_650/" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.scan.co.uk/products/650w-evga-supernova-g2-fully-modular-80plus-gold-atx-power-supply-541a-single-plus12v-rail-140mm-dou?v=c" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="psu-more" role="tabpanel" aria-labelledby="psu-more-tab">
-                            <p>For full specifications click <a href="https://www.evga.com/products/product.aspx?pn=220-g2-0650-y1" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="https://www.techpowerup.com/reviews/EVGA/SuperNOVA_G2_650/" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.scan.co.uk/products/650w-evga-supernova-g2-fully-modular-80plus-gold-atx-power-supply-541a-single-plus12v-rail-140mm-dou?v=c" class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="psu-more" role="tabpanel" aria-labelledby="psu-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9tf00pSp8q4" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -288,6 +381,8 @@
             <div class="specs-outer-container">
                 <h2>Keyboard</h2>
                 <img src="source/img/keyboard.png" alt="Logitech G213 " />
+
+                <!--Tabs-->
                 <div class="specs-inner-container">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -297,20 +392,31 @@
                             <a class="nav-link" id="keyboard-more-tab" data-toggle="tab" href="#keyboard-more" role="tab" aria-controls="more" aria-selected="false">More</a>
                         </li>
                     </ul>
+
+                    <!--Tabs contents-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="keyboard-overview" role="tabpanel" aria-labelledby="keyboard-overview-tab">
-                            <h6>
-                                Logitech G213 Prodigy Gaming Keyboard, RGB Backlit, Qwerty UK Layout - Black
-                            </h6>
-                            <p>
-                                The Logitech G213 is a mechanical gaming keyboard that’s focused on delivering as many features as possible at budget-friendly price tag. It’s quite the package, with fully RGB backlit keys, dedicated media controls and endless software customisation.
-                            </p>
+                            <!--Tabs contents - Overview -->
+                            <div class="tab-content-overview">
+                                <h6>
+                                    Logitech G213 Prodigy Gaming Keyboard, RGB Backlit, Qwerty UK Layout - Black
+                                </h6>
+                                <p>
+                                    The Logitech G213 is a mechanical gaming keyboard that’s focused on delivering as many features as possible at budget-friendly price tag. It’s quite the package, with fully RGB backlit keys, dedicated media controls and endless software customisation.
+                                </p>
+                            </div>
+
+                            <!--Tabs contents - Overview buttons -->
+                            <div class="tab-content-overview-buttons">
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.logitechg.com/en-gb/product/g213-rgb-gaming-keyboard" role="button" target="_blank"><i class="fas fa-microchip hvr-icon"></i>  Specs</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="http://www.trustedreviews.com/reviews/logitech-g213-prodigy" role="button" target="_blank"><i class="fab fa-readme hvr-icon"></i>  Review</a>
+                                <a class="btn btn-warning hvr-icon-buzz-out" href="https://www.amazon.co.uk/Logitech-Prodigy-Gaming-Keyboard-Backlit/dp/B01L6L451Q" class="purchase" target="_blank" role="button"><i class="fas fa-shopping-cart hvr-icon"></i>  Buy</a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="keyboard-more" role="tabpanel" aria-labelledby="keyboard-more-tab">
-                            <p>For full specifications click <a href="https://www.logitechg.com/en-gb/product/g213-rgb-gaming-keyboard" class="spec-sheet" target="_blank">here</a></p>
-                            <p>Read the full <a href="http://www.trustedreviews.com/reviews/logitech-g213-prodigy" class="review" target="_blank">Written Review</a></p>
-                            <p><a href="https://www.johnlewis.com/logitech-g213-prodigy-gaming-keyboard/p3208012?sku=236633409&s_kwcid=2dx92700032011608109&tmad=c&tmcampid=2&gclid=Cj0KCQjwn-bWBRDGARIsAPS1svtOtixUuM4tuvCi9Zr7sdt2kIq04Cjs_JvzUsr6xyGPIZZqq4ScVoEaAlU3EALw_wcB&gclsrc=aw.ds"
-                                    class="purchase" target="_blank">Buy</a></p>
+
+                        <!--Tabs contents - More -->
+                        <div class="embed-responsive embed-responsive-16by9 tab-pane fade" id="keyboard-more" role="tabpanel" aria-labelledby="keyboard-more-tab">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a1iJfiYlUYQ" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -319,20 +425,18 @@
 
         </div>
         <!--Grid Column-->
-        
     </section>
-
 
     <footer>
         <div class="footer-container">
             <div class="footer-social">
                 <h5 class="text-center">Keep in touch</h5>
                 <ul class="list-inline social-links">
-                    <li><a href="https://twitter.com/13damianism" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://uk.linkedin.com/in/damian-rodbari" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/damianism" target="_blank"><i class="fa fa-github-square"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCM9_4SriRFp17bh2jZujgZQ/featured?view_as=subscriber" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/skullphish/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/13damianism" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://uk.linkedin.com/in/damian-rodbari" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/damianism" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCM9_4SriRFp17bh2jZujgZQ/featured?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/skullphish/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="footer-copyright text-center">
@@ -341,10 +445,7 @@
             </div>
         </div>
     </footer>
-
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
-
+    
 </body>
 
 </html>

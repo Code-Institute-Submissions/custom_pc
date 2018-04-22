@@ -1,0 +1,76 @@
+label {
+    margin-left: 0.625rem;
+}
+
+
+/*.form-body {*/
+/*    text-align: center;*/
+/*}*/
+.card-contact {
+    margin: 1.25rem auto;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+
+.md-form {
+    margin-bottom: 1.25rem;
+}
+
+
+.btn {
+    border-radius: 4px;
+    background-color: #D1603D;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.25rem;
+    padding: 10px;
+    width: 10rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-reset span:after {
+    content: '\00d7';    /* glyph for X cross*/ 
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+
+}
+
+.btn-submit span:after {
+    content: '\00bb';  /* glyph for two side ways arrows*/  
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+
+.btn:hover {
+    background-color: #F0A202;
+    color: #2D291B;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}

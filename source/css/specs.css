@@ -2,7 +2,6 @@
 .container-specs {
     display: flex;
     flex-flow: column nowrap;
-    /*justify-content:space-between;*/
 }
 
 /*container holding individual components - h2 img .specs-inner-container */
@@ -17,12 +16,15 @@
 }
 
 /*container - holding nav-tabs and their contents*/
-.specs-inner-container {}
+.specs-inner-container {
+    height: 360px;
+    /*max-width:  */
+}
 
 /*individual component images*/
 .specs-outer-container > img {
     padding: 1.25rem;
-    width: 80%;
+    height: 380px;
     align-self: center;
 }
 
@@ -42,4 +44,19 @@
     border-bottom: 1px solid #dee2e6;
     border-right: 1px solid #dee2e6;
     padding: 0.625rem;
+    height: 89%;
+    display: flex;
+}
+
+.tab-content>.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.btn-warning:hover {
+  color: white;
+  background-color: #D1603D;
+  border-color: #d39e00;
 }

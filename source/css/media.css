@@ -7,16 +7,25 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .summary img {
         max-width: 40vw;
         display: block;
         align-self: center;
     }
-    
+
+    /* ------ specs.html ------ */
+    .card-contact {
+        /*margin: 0 auto;*/
+        /*margin-bottom: 2rem;*/
+        width: 70%;
+        /*background-color: yellow;*/
+    }
+
 }
 
 /*large screens only*/
+
 @media (min-width: 992px) {
     #navbarNavAltMarkup {
         justify-content: flex-end;
@@ -27,14 +36,14 @@
         display: flex;
         flex-direction: row;
     }
-    
+
     .summary .inner-container {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
         align-content: flex-start;
     }
-    
+
     .summary img {
         max-width: 450px;
     }
@@ -49,6 +58,30 @@
     .sections-item {
         flex-basis: 50%;
     }
+
+
+    /* ------ specs.html ------ */
+    .container-specs {
+        display: flex;
+        flex-flow: row wrap;
+        /*justify-content:space-between;*/
+    }
+
+    /*target all the childern - h2 img specs-inner-container*/
+    .specs-outer-container {
+        flex: 1 1 45%;
+        /*justify-content: space-between;*/
+    }
+
+    /* ------ specs.html ------ */
+    .card-contact {
+        /*margin: 0 auto;*/
+        /*margin-bottom: 2rem;*/
+        width: 60%;
+        /*background-color: yellow;*/
+    }
+
+
 }
 
 
@@ -78,4 +111,22 @@
         flex: 1 1 30%;
     }
 
+    /* ------ specs.html ------ */
+    /*target all the childern - h2 img specs-inner-container*/
+    .specs-outer-container {
+        flex: 1 1 30%;
+    }
+
+    /*.specs-inner-container {*/
+    /*    flex: 1;*/
+    /*}*/
+    
+        /* ------ specs.html ------ */
+    .card-contact {
+        /*margin: 0 auto;*/
+        /*margin-bottom: 2rem;*/
+        width: 50%;
+        /*background-color: yellow;*/
+    }
+    
 }
