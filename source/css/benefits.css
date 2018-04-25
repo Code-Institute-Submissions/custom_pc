@@ -4,10 +4,6 @@
     flex-direction: column;
 }
 
-/*.container-benefit img {*/
-/*    max-width: 50%;*/
-/*}*/
-
 .landing-intro {
     background-color: #444;
     background-image: url("../img/benefits-intro.jpeg");
@@ -22,6 +18,9 @@
     justify-content: center;
 }
 
+.landing-intro p {
+    text-align: center;
+}
 
 .accordion {
     margin: 1rem 0;

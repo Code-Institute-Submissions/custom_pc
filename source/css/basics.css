@@ -13,6 +13,30 @@ html, body {
     text-transform: uppercase;
 }
 
+.link-scroll {
+    color: #FF8C42;
+    font-size: 2rem;
+    -webkit-animation-name: scroll; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: scroll;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scroll {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes scroll {
+    from {color: red;}
+    to {color: yellow;}
+}
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar*/
 
@@ -27,7 +51,7 @@ nav {
 a.nav-item.nav-link {
     text-align: center;
     /* background-color: black; */
-    margin-top: 0.15rem;
+    margin: 0.1rem 0;
 } 
 
 .navbar-light .navbar-nav .nav-link:focus, 
@@ -94,3 +118,6 @@ a.nav-item.nav-link {
     padding: 1rem 0px;
 }
 
+footer a {
+    color: #F0B329;
+}

@@ -1,11 +1,4 @@
 
-.container-main {
-    background-color: #F8BA1F;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ callout-container*/
 
@@ -14,7 +7,7 @@
     background-image: url("../img/minimal.jpg");
     /*background-blend-mode: overlay;*/
     background-size: cover;
-    height: 100vh;
+    height: 96vh;
     /* how do i factor in the navbar?*/
     padding: 1em;
     color: white;
@@ -24,6 +17,7 @@
     justify-content: center;
 
 }
+
 
 main h2 {
     text-align: center;
@@ -38,11 +32,18 @@ main h2 {
     align-items: center;
 }
 
-/*----------------------------------*/
+/*------------------container-main -*/
+
+.container-main {
+    background-color: #F8BA1F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .container-main .accordion .card img {
     display: none;
 }
-
 
 
 .btns-mystory {
@@ -57,18 +58,6 @@ main h2 {
     /*background-color: transparent;*/
     /*font-weight: 500;*/
 }
-
-/*.btn-configuration {*/
-/*        color: #2D291B;*/
-/*        background-color: transparent;*/
-/*        font-weight: 500;*/
-/*}*/
-
-/*.btn-resources {*/
-/*        color: #2D291B;*/
-/*        background-color: transparent;*/
-/*        font-weight: 500;*/
-/*}*/
 
 .btn-dark {
     color: #2D291B;
