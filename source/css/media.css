@@ -2,25 +2,16 @@
 
 @media (min-width: 768px) {
 
-    /*MAIN-CONTENT > SUMMARY*/
-    .summary .outer-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .summary img {
-        max-width: 40vw;
+    /*main page*/
+    .container-main .accordion .card img {
         display: block;
-        align-self: center;
+        margin: 0 auto;
     }
 
     /* ------ specs.html ------ */
-    .card-contact {
-        /*margin: 0 auto;*/
-        /*margin-bottom: 2rem;*/
-        width: 70%;
-        /*background-color: yellow;*/
-    }
+
+
+    /* ------ benefits.html ------ */
 
 }
 
@@ -80,7 +71,12 @@
         width: 60%;
         /*background-color: yellow;*/
     }
-
+    
+    
+    .accordion {
+        width: 70%;
+        margin: 1rem auto;
+    }
 
 }
 
@@ -120,13 +116,14 @@
     /*.specs-inner-container {*/
     /*    flex: 1;*/
     /*}*/
-    
-        /* ------ specs.html ------ */
+    /* ------ specs.html ------ */
     .card-contact {
         /*margin: 0 auto;*/
         /*margin-bottom: 2rem;*/
         width: 50%;
         /*background-color: yellow;*/
     }
-    
+
+
+
 }

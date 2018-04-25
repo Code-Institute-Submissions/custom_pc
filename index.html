@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
     <!--local css-->
     <link rel="stylesheet" href="source/css/basics.css" type="text/css" />
     <link rel="stylesheet" href="source/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="source/css/benefits.css" type="text/css" />
     <link rel="stylesheet" href="source/css/media.css" type="text/css" />
     <!--bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,7 +23,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
             <a class="navbar-brand" href="index.html">
                 <h2>CUSTOM PC</h2>
             </a>
@@ -33,164 +35,104 @@
                     <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="about.html">About</a>
                     <a class="nav-item nav-link" href="specs.html">Specs</a>
-                    <a class="nav-item nav-link" href="gallery.html">Gallery</a>
                     <a class="nav-item nav-link" href="contact.html">Contact</a>
-                    <a class="nav-item nav-link disabled" href="resources.html">Resources</a>
+                    <a class="nav-item nav-link" href="resources.html">Resources</a>
                 </div>
             </div>
         </nav>
     </header>
-    
+
     <section class="container-fluid callout-container">
         <main role="main" class="inner cover section-cover-wrapper">
-            <h1 class="cover-heading">Should you build your own PC?</h1>
-            <p class="lead">
-                In this page, I’m going to outline a few benefits associated with building your own computer in the hopes that you will see how much better of a deal you will get when compared to buying a pre-built machine
-                <p class="lead">
-                    <a href="#second-row" class="btn btn-lg btn-secondary section-cover-btn">Learn more</a>
-                </p>
+            <h2 class="cover-heading">Thinking of building your own PC?</h2>
         </main>
+        <a href="#headingIntro">scroll down</a>
     </section>
 
+    <div class="container-main">
 
-    <div class="container-fluid main-content" id="second-row">
-        <section>
-            <div class="summary">
-                <h1>Summary</h1>
-                <div class="outer-container">
-                    <div class="inner-container">
-                        <p>So why would it make more sense to build your own computer as opposed to picking up a pre-built one? With desktop computer sales at an all-time low and an endless range of laptop configurations available for consumers to choose
-                            from, the thought of assembling your own PC from scratch might seem like a rather dated concept relevant only to die-hard enthusiasts. However, contrary to popular belief, the desktop remains the preferred machine when it comes
-                            to power, productivity or even value for money. Here are a few reasons why you should assemble your own computer.
+        <div class="accordion" id="accordion">
+
+            <!--Future-proofing-->
+            <div class="card">
+                <div class="card-header" id="headingIntro">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="false" aria-controls="collapseIntro">
+                            <h4>Introduction</h4>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseIntro" class="collapse show" aria-labelledby="headingIntro" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>
+                            In this page, I’m going to outline a few benefits associated with building your own computer in the hopes that you will see how much better of a deal you will get when compared to buying a pre-built machine
                         </p>
                         <p>
-                            to do in this section, explain that you have included your own configuration in the specs page, explain how it's geared towards both gaming and processing power.
-                        </p>
-                        <p>
-                            explain that the gallery has pictures of the best custom-built machines.
+                            So why would it make more sense to build your own computer as opposed to picking up a pre-built one? With desktop computer sales at an all-time low and an endless range of laptop configurations available for consumers to choose from, the thought of assembling
+                            your own PC from scratch might seem like a rather dated concept relevant only to die-hard enthusiasts. However, contrary to popular belief, the desktop remains the preferred machine when it comes to power, productivity or even
+                            value for money. Here are a few reasons why you should assemble your own computer.
                         </p>
                     </div>
                     <img src="source/img/pc.png" />
                 </div>
             </div>
-        </section>
+            <!--</div>-->
 
-        <div class="sections-container">
-            <section class="sections-item">
-                <h1>Warranty</h1>
-                <div class="inner-container">
-                    <p>
-                        When you buy a pre-built computer from a retailer, it usually comes with a warranty that lasts for a year or so, they may also include technical support. This sort of warranty would typically cover the entire computer as a whole, which may sound nice
-                        but it may end up being an inconvenient to you if a part in your system malfunctions. You typically need to send your machine in for a repair or wait for the company to send you a technician which leaves you without a computer
-                        in both scenarios.
-                    </p>
-                    <p>
-                        However, if you buy your components separately for a custom build, you would realise that these pieces have warranty options that last for two or even more as opposed to the one year you get with a pre-built system. Some high-quality components are shipped
-                        with warranties that last for five or even seven years with some components even coming with lifetime guarantees.
-                    </p>
-                    <p>
-                        Another major issue with a pre-built system is that, upgrading your machine could void your warranty as it’s treated as unnecessary tinkering by the manufacturer. Furthermore, the components that your machine come with may not be suitable for upgrading.
-                        For example, the motherboard on such machines usually come with only two ram slots, so increasing your ram mean replacing the motherboard and possibly the CPU depending how old the build is.
-                    </p>
+            <!--Should you build your own PC?-->
+            <div class="card">
+                <div class="card-header" id="headingWhy">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseWhy" aria-expanded="false" aria-controls="collapseWhy">
+                            <h4>Why build a PC?</h4>
+                        </button>
+                    </h5>
                 </div>
-            </section>
-            <section class="sections-item">
-                <h1>Customisation</h1>
-                <div class="inner-container">
-                    <p>
-                        Building your PC means you have total control as a builder. You can select the parts based on exactly what you want or need and doing this also allows for easy changes down the road. You may consider your PC as an ever changing and ever growing process.
-                        Maybe right now you may only want to do some casual gaming on the side and not care for the highest quality graphics. However, in a few years, you may be a gaming fanatic and in need of a better graphics card or wonder off into
-                        the realms of video editing and find yourself short of processing power. In any case, instead of buying an entirely new system, you can just swap couple of the core components in your machine.
-                    </p>
-                    <p>
-                        For example, if you wish to go down the gaming route, then you would naturally invest in a powerful GPU, a fast SSD and a high refresh rate monitor or even a 4k monitor depending on what type of game you want to play. If you find yourself craving for
-                        more processing power, you could opt in for a more powerful multithreaded CPU instead with more ram.
-                    </p>
-                    <p>
-                        One other issue with pre-built systems is that, you are stuck with whatever generic configuration that is offered by the retailer and finding exactly what you are looking for will be a challenge. However, with custom PCs you have the flexibility to experiment
-                        with different builds and ultimately create exactly what you were looking for.
-                    </p>
+                <div id="collapseWhy" class="collapse" aria-labelledby="headingWhy" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>
+                            So why would it make more sense to build your own computer as opposed to picking up a pre-built one? With desktop computer sales at an all-time low and an endless range of laptop configurations available for consumers to choose from, the thought of assembling
+                            your own PC from scratch might seem like a rather dated concept relevant only to die-hard enthusiasts. However, contrary to popular belief, the desktop remains the preferred machine when it comes to power, productivity or even
+                            value for money. If you wish to know more about the benefits of building your personal PC.
+                        </p>
+                        <a href="benefits.html" class="btn btn-dark btn-benefits">benefits <i class="fas fa-angle-double-right"></i></a>
+                    </div>
                 </div>
-            </section>
-            <section class="sections-item">
-                <h1>Skills</h1>
-                <div class="inner-container">
-                    <p>
-                        Whether you are a student or an adult in the workforce, building a PC gives you an advantage over those who have not built their own computer. If you put 100 people in a room and ask how many of them can build a computer, I can guarantee that a small
-                        percentage would raise their hand. We live in an era where computers are everywhere we go; they are in businesses, households, cars, and even in our pockets.
-                    </p>
-                    <p>
-                        Understanding how these machines are put together is an important life skill. If your computer has problems, you can fix it yourself. Maybe your parents, friends, children, or other relatives are having computer trouble too. Rather than spending thousands
-                        of pounds to replace it, they can call you over, and you can help diagnose and fix it yourself. Having the ability to build and fix a computer can benefit you for the rest of your life. These life skills can help you save time
-                        and money, which gives you an advantage over everyone else who doesn’t have those skills.
-                    </p>
+            </div>
+
+            <!--Why did i do it?-->
+            <div class="card">
+                <div class="card-header" id="headingHow">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseHow" aria-expanded="false" aria-controls="collapseHow">
+                            <h4>My story</h4>
+                        </button>
+                    </h5>
                 </div>
-            </section>
-            <section class="sections-item">
-                <h1>Upgradability</h1>
-                <div class="inner-container">
-                    <p>
-                        When you build your own PC, you will purchase the individual component based on your needs. If you determine that a particular part isn’t performing to your liking, or if you decide you want an upgrade, replacing the part is a simple process. However,
-                        upgrading the components on a pre-built store-bought machine will in many cases void your machine’s warranty with manufacturer and it can quite difficult if you have never built your own computer, you may not be comfortable enough
-                        to perform the upgrades yourself, which will force you to pay more to have someone make the upgrades for you.
-                    </p>
-                    <p>
-                        Upgrading the parts on your custom-built PC is cheaper and it’s often as simple as removing the component in question and replacing it with the upgraded component. As an avid gamer it is always a good idea to update your system every few years.
-                    </p>
+                <div id="collapseHow" class="collapse" aria-labelledby="headingHow" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>
+                            Like most avid gamer, I spent months researching the right configuration that catered to all my needs.
+                        </p>
+                        <ul>
+                            <li>Graphics card suitable for 1440p gaming</li>
+                            <li>Fast SSD to load games faster</li>
+                            <li>Multithreaded CPU for programming and gaming</li>
+                            <li>Quad HD IPS monitor</li>
+                        </ul>
+                        <p>
+                            I knew exactly what I wanted. However, I couldn’t find that exact configuration I was looking for anywhere no matter how hard I scoured the web. I did come across brands such as Alienware and Razer, which were extravagantly priced and still short of what
+                            I wanted, which ultimately lead me to build the system myself rather than buying it off the shelf.
+                        </p>
+                        <div class="btns-mystory">
+                            <a href="specs.html" class="btn btn-dark btn-configuration">My configuration <i class="fas fa-angle-double-right"></i></a>
+                            <a href="resources.html" class="btn btn-dark btn-resources">Resources <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="sections-item">
-                <h1>Operating system(s)</h1>
-                <div class="inner-container">
-                    <p>
-                        When you buy a computer from a pre-built store-bought machine, you are stuck with whatever operating system is on that machine. Just because a company comes out with a new operating system, it does not mean that it’s the best one on the market. Often,
-                        these new systems have plenty of glitches and other problems.
-                    </p>
-                    <p>
-                        If you build your own PC, you don’t have any restrictions with this problem. You can install multiple operating systems on your machine without having to worry about voiding your warranty. You aren’t forced to run the new Windows 10; instead, you can
-                        install whatever operating system you feel most comfortable using. You won’t be forced to upgrade to a different system unless you want to, and you can always go back if you are unhappy with the new software.
-                    </p>
-                </div>
-            </section>
-            <section class="sections-item">
-                <h1>Bloatware</h1>
-                <div class="inner-container">
-                    <p>
-                        Perhaps the most common complaint of all when it comes to buying a new computer, whether it’s a laptop, desktop or even a smartphone, is that they tend to come installed with loads of useless junk software. In fact, one of the first things most experts
-                        recommend to those who have just purchased a new computer is to spend a few hours cleaning it of all the off-the-shelf junk. From so-called antivirus and PC “optimization” software plagued by nag screens to unwanted trial and demo
-                        versions of other programs and games, bloatware has become a serious problem. However, when you assemble your own computer, you’ll start with a completely blank hard drive and only a retail copy of windows (or any other operating
-                        system).
-                    </p>
-                </div>
-            </section>
-            <section class="sections-item">
-                <h1>Cost</h1>
-                <div class="inner-container">
-                    <p>
-                        Building your PC based on your specific wants and needs can give you the same performance as a pre-built system for a fraction of the cost. For example, if the primary functions of a computer are to browse the web, stream videos and respond to emails,
-                        then even purchasing an entry level laptop/computer will be a waste of your hard-earned cash. Such machine can be built on a budget as low as £300 or even less depending on your region. As for gaming rigs, a machine capable of
-                        handling most triple A games on max settings on a 1080p monitor can be assembled for less £700 depending on what type of graphics card you decide to go for. However, buying a pre-built machine from a store with similar performance
-                        will cost you over £1000
-                    </p>
-                </div>
-            </section>
-            <section class="sections-item">
-                <h1>Future-proofing</h1>
-                <div class="inner-container">
-                    <p>
-                        Assembling your own PC also allows you to future-proof your machine. Upgrading doesn’t necessarily mean having to replace every single component in your system, in fact, the power supply unit, case, monitor and the other peripherals such as mouse and
-                        keyboard don’t require upgrading for a long time. Having put together your own PC, the next time you decide to upgrade, you would only need to replace the core components of your machine depending on your specific needs. For example,
-                        you may want to replace your graphics card every 3-4 but your power supply unit and monitor would still be fit for purpose until they give out.
-                    </p>
-                </div>
-            </section>
+            </div>
+
         </div>
     </div>
-
-
-    <!--<section>-->
-    <!--    section Two-->
-    <!--</section>-->
 
     <footer>
         <div class="footer-container">
