@@ -1,78 +1,86 @@
-@media (min-width: 576px) {}
+@media (min-width: 401px) {
+    
+    /* ------ specs.html ------ */
+    .specs-inner-container {
+        height: 435px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    /* ------ specs.html ------ */
+    .specs-inner-container {
+        height: 280px;
+    }
+
+    .tab-content>.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tab-content-overview-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+    }
+
+    .specs-outer-container>img {
+        padding: 1.25rem;
+        height: 380px;
+        align-self: center;
+    }
+}
 
 @media (min-width: 768px) {
 
-    /*main page*/
+    /* ------- main page -------*/
     .container-main .accordion .card img {
         display: block;
         margin: 0 auto;
     }
 
     /* ------ specs.html ------ */
+    .specs-inner-container {
+        height: 280px;
+    }
 
+    .tab-content {
+        height: 81%;
+    }
 
-    /* ------ benefits.html ------ */
 
 }
 
 /*large screens only*/
 
 @media (min-width: 992px) {
+    
+    /* ------ basics ------ */
     #navbarNavAltMarkup {
         justify-content: flex-end;
     }
 
-    /*MAIN-CONTENT > SUMMARY*/
-    .summary .outer-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .summary .inner-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        align-content: flex-start;
-    }
-
-    .summary img {
-        max-width: 450px;
-    }
-
-
-    /*reponsive sections layout */
-    .sections-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .sections-item {
-        flex-basis: 50%;
-    }
-
-
     /* ------ specs.html ------ */
+    .specs-inner-container {
+        height: 310px;
+    }
+    
+    .tab-content {
+        height: 89%;
+    }
+    
     .container-specs {
         display: flex;
         flex-flow: row wrap;
-        /*justify-content:space-between;*/
     }
 
     /*target all the childern - h2 img specs-inner-container*/
     .specs-outer-container {
         flex: 1 1 45%;
-        /*justify-content: space-between;*/
     }
 
-    /* ------ specs.html ------ */
-    .card-contact {
-        /*margin: 0 auto;*/
-        /*margin-bottom: 2rem;*/
-        width: 60%;
-        /*background-color: yellow;*/
-    }
-    
-    
+     /* ------ index/benefits.html ------ */
     .accordion {
         width: 70%;
         margin: 1rem auto;
@@ -80,50 +88,33 @@
 
 }
 
-
-
-
+/* for desktp size screens*/
 @media (min-width: 1200px) {
 
-    /*MAIN-CONTENT > SUMMARY*/
-    .summary .outer-container {
-        display: flex;
-        flex-direction: row;
-    }
-    .summary img {
-        max-width: 500px;
-        /*display: inline-block;*/
-    }
-
-
-    /*reponsive sections layout */
-    .sections-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .sections-item {
-        /*flex-basis: 30%;*/
-        flex: 1 1 30%;
-    }
-
     /* ------ specs.html ------ */
-    /*target all the childern - h2 img specs-inner-container*/
     .specs-outer-container {
-        flex: 1 1 30%;
+        flex: 1 1 2%;
     }
 
-    /*.specs-inner-container {*/
-    /*    flex: 1;*/
-    /*}*/
-    /* ------ specs.html ------ */
-    .card-contact {
-        /*margin: 0 auto;*/
-        /*margin-bottom: 2rem;*/
-        width: 50%;
-        /*background-color: yellow;*/
+    .specs-inner-container {
+        height: 360px;
     }
 
+}
 
+
+ /*for 1440p and higher res screens*/
+@media (min-width: 1800px) {
+
+    .specs-outer-container .img1 {
+        display: none
+    }
+
+    .specs-outer-container .img2 {
+        display: block;
+        padding: 1.25rem;
+        height: 380px;
+        align-self: center;
+    }
 
 }

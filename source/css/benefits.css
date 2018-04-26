@@ -6,8 +6,8 @@
 
 .landing-intro {
     background-color: #444;
-    background-image: url("../img/benefits-intro.jpeg");
-    background-blend-mode: multiply;
+    background-image: url("../img/benefits-intro2.jpeg");
+    background-blend-mode: overlay;
     background-size: cover;
     height: 70vh;
     padding: 1em;

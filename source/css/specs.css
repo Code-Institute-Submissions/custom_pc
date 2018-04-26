@@ -17,21 +17,26 @@
 
 /*container - holding nav-tabs and their contents*/
 .specs-inner-container {
-    height: 360px;
-    /*max-width:  */
+    height: 510px;
 }
 
 /*individual component images*/
 .specs-outer-container > img {
     padding: 1.25rem;
-    height: 380px;
+    height: 300px;
     align-self: center;
+}
+
+.specs-outer-container .img2 {
+    display: none;
 }
 
 /*individual component h2*/
 .specs-outer-container h2 {
     align-self: center;
 }
+
+
 
 /*target all the childern - h2 img specs-inner-container*/
 .specs-outer-container * {}
@@ -55,8 +60,20 @@
 }
 
 
+.tab-content-overview-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.btn-warning {
+    width: 100%;
+    margin: 2px;
+    font-size: 0.95rem;
+}
+
 .btn-warning:hover {
     color: #ffc108;
     background-color: black;
-  
 }
