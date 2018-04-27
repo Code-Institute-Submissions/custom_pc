@@ -1,5 +1,5 @@
 @media (min-width: 401px) {
-    
+
     /* ------ specs.html ------ */
     .specs-inner-container {
         height: 435px;
@@ -55,7 +55,7 @@
 /*large screens only*/
 
 @media (min-width: 992px) {
-    
+
     /* ------ basics ------ */
     #navbarNavAltMarkup {
         justify-content: flex-end;
@@ -65,11 +65,11 @@
     .specs-inner-container {
         height: 310px;
     }
-    
+
     .tab-content {
         height: 89%;
     }
-    
+
     .container-specs {
         display: flex;
         flex-flow: row wrap;
@@ -80,7 +80,7 @@
         flex: 1 1 45%;
     }
 
-     /* ------ index/benefits.html ------ */
+    /* ------ index/benefits.html ------ */
     .accordion {
         width: 70%;
         margin: 1rem auto;
@@ -89,6 +89,7 @@
 }
 
 /* for desktp size screens*/
+
 @media (min-width: 1200px) {
 
     /* ------ specs.html ------ */
@@ -100,10 +101,17 @@
         height: 360px;
     }
 
+    .card-contact {
+        /*margin: 1.25rem auto;*/
+        /*margin-bottom: 2rem;*/
+        width: 60%;
+    }
+
 }
 
 
- /*for 1440p and higher res screens*/
+/*for 1440p and higher res screens*/
+
 @media (min-width: 1800px) {
 
     .specs-outer-container .img1 {
@@ -116,5 +124,12 @@
         height: 380px;
         align-self: center;
     }
+
+    .card-contact {
+        /*margin: 1.25rem auto;*/
+        /*margin-bottom: 2rem;*/
+        width: 40%;
+    }
+
 
 }
