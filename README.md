@@ -270,7 +270,7 @@ to practice on my styling and aligning skills.
 
 #### Bugs
 
-On the configuration page, include imbedded YouTube videos. I encountered two
+On the configuration page, I have included imbedded YouTube videos. I encountered two
 types of bugs with YouTube embedded videos. After doing some research on the web
 I managed to eliminate one the bugs by disabling my Adblock extension. However,
 the second type of bug which only applies to chromium is still present since the
