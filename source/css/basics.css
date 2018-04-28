@@ -48,6 +48,8 @@ nav {
     color: #2D291B;
 }
 
+
+/*to be accessed from two seperate pages - benefits and index*/
 a.nav-item.nav-link {
     text-align: center;
     /* background-color: black; */
