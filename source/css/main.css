@@ -5,6 +5,7 @@
     background-image: url("../img/main-intro.jpeg");
     background-blend-mode: overlay;
     background-size: cover;
+    background-attachment: fixed;
     height: 96vh;
     /* how do i factor in the navbar?*/
     padding: 1em;
