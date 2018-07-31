@@ -7,7 +7,6 @@
     background-size: cover;
     background-attachment: fixed;
     height: 96vh;
-    /* how do i factor in the navbar?*/
     padding: 1em;
     color: white;
     display: flex;
@@ -51,9 +50,6 @@ main h2 {
     margin-left: auto;
     display: block;
     width: 10rem;
-    /*color: #2D291B;*/
-    /*background-color: transparent;*/
-    /*font-weight: 500;*/
 }
 
 .btn-dark {
@@ -66,5 +62,4 @@ main h2 {
 .btn-configuration:hover,
 .btn-benefits:hover {
     color: #ffc108;
-    /*background-color: black;*/
 }

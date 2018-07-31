@@ -206,7 +206,7 @@ queries.css
 
 -   Handles all the media queries for all pages.
 
-Project Deployment
+Project Approach
 ==================
 
 #### Nav:
@@ -276,3 +276,10 @@ I managed to eliminate one the bugs by disabling my Adblock extension. However,
 the second type of bug which only applies to chromium is still present since the
 issue has still not been addressed by google and the only solutions I found was
 JavaScript heavy.
+
+Project Deployment
+==================
+
+The final version of the project was deployed to Github.com using its free
+hosting feature “GitHub Pages” and can be viewed live
+[here](https://damianism.github.io/custom_pc/).
